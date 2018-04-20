@@ -1,6 +1,6 @@
 # finalproj
 
-movies.py contains code to pull data from metacritic.com crawling and scraping pages for the top 100 movies of all time with get_metacritic_data(). It also makes requests for additional data to the Open Movie Database with get_omdb_data(). In order to use the OMDb API, you will need an api key which can be obtained at http://www.omdbapi.com/. This should be added to a file called secrets.py in order to sync properly. 
+movies.py contains code to pull data from metacritic.com crawling and scraping pages for the top 100 movies of all time with get_metacritic_data(). It also makes requests for additional data to the Open Movie Database with get_omdb_data(). In order to use the OMDb API, you will need an api key which can be obtained at http://www.omdbapi.com/. This should be added to a file called secrets.py as the value of a variable named secret_key in order to sync properly. 
 
 In order to get started, you will need to run init_db() and insert_data(). init_db() will create a database with two tables, one to hold the metacritic data, the other to hold the omdb data. insert_data() will call both get_metacritic_data() and get_omdb_data() and add the data to the database. By calling the get data functions, the program will also create a cache file called movies-cache.json.
 
